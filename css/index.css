@@ -1,0 +1,208 @@
+.flex {
+    display: flex;
+}
+/*banner section*/
+.banner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 670px;
+}
+.banner-container {
+    background-color: #f2eeeb;
+    background-image: url("../img/Jampromo_background.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 670px;
+}
+.banner_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    left: 25%;
+    padding-top: 10px;
+}
+.mfs {
+    width: 50%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner_text {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    padding-left: 90px;
+}
+.benefitting_div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*about section*/
+/*what is*/
+.what_is_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 17px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.what_is {
+    width: 100%;
+}
+.about_image img {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/*medals*/
+.medals_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 17px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.medal_info {
+    width: 100%;
+}
+.medal_showcase::after {
+    clear: both;
+    width: 100%;
+    background-size: cover;
+}
+.medal {
+    float: left;
+    width: 50%;
+}
+
+/*guests section*/
+.guests_container {
+    background-color: #D56062;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.guests_title {
+    text-align: center;
+}
+.guest {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    background-color: #F37748;
+    margin: 8px;
+    padding: 4px;
+    padding-bottom: 22px;
+
+}
+.guest:hover {
+    box-shadow: 6px 8px 0 #d34a18;
+    background-color: #f76c39;
+    color: #f2eeeb;
+}
+.guest_img {
+    width: 110px;
+    height: 110px;
+}
+.guest_title {
+    background-color: #F37748;
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 16px;
+}
+.guests_grid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Meet the team section*/
+.team_container {
+    background-color: #e24f52;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.team_banner_title {
+    text-align: center;
+}
+.team_title {
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.team_grid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team {
+    display: inline-block;
+    width: 192px;
+    height: 310px;
+    background-color: #F37748;
+    margin: 8px;
+    padding: 4px;
+    padding-bottom: 22px;
+
+}
+.team:hover {
+    box-shadow: 6px 8px 0 #d34a18;
+    background-color: #f76c39;
+    color: #f2eeeb;
+}
+.team_img {
+    width: 158px;
+    height: 158px;
+    margin-top: 19px;
+}
+.team_desc {
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 90px;
+}
+.team_socials {
+    color: #ffffff;
+    font-size: 30px;
+    margin: auto;
+}
+
+/*footer junk*/
+.footer_container {
+    max-width: 800px;
+    margin: auto;
+}
+.footer_nav {
+    justify-content: center;
+}
+.footer_social {
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin: auto;
+}
+
+a:visited {
+    color: #ffffff;  
+}
+a:hover {
+    color: #ECC30B;
+}
+
+footer {
+    background-color: #f83f42;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

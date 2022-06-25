@@ -59,6 +59,9 @@
 .what_is {
     width: 100%;
 }
+.what_is h2{
+    color: #d34a18;
+}
 .about_image img {
     width: 100%;
     margin-left: 50px;
@@ -74,6 +77,9 @@
 }
 .medal_info {
     width: 100%;
+}
+.medal_info h2{
+    color: #d34a18;
 }
 .medal_showcase::after {
     clear: both;
@@ -177,32 +183,4 @@
     color: #ffffff;
     font-size: 30px;
     margin: auto;
-}
-
-/*footer junk*/
-.footer_container {
-    max-width: 800px;
-    margin: auto;
-}
-.footer_nav {
-    justify-content: center;
-}
-.footer_social {
-    justify-content: center;
-    color: #ffffff;
-    font-size: 30px;
-    margin: auto;
-}
-
-a:visited {
-    color: #ffffff;  
-}
-a:hover {
-    color: #ECC30B;
-}
-
-footer {
-    background-color: #f83f42;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }

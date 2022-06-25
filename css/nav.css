@@ -1,11 +1,11 @@
 .nav {
-    position: absolute;
+    position: fixed;
     left: 0px;
-    height: 60px;
     background-color: #067BC2;
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 60px;
 }
 .nav ul {
     margin: 0;
@@ -19,19 +19,17 @@
 }
 .nav ul li a {
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
+    padding: 13px 60px;
     color: #FFF;
     text-align: center;
+    display: inline-block;
 }
 .nav ul li a img{
     padding: 0px 0px !important;
 }
-.nav_tabs:hover {
-    /*
+.nav_tabs:hover a{
     background-color: #84BCDA;
-    */
-    color:#04AA6D;
+    color:#f76c39;
 }
 /*
 .nav {
@@ -76,4 +74,38 @@ header {
     padding-left: 30px;
     font-weight: bold;
     line-height: 30px;
+}
+
+
+/*Footer*/
+.footer_copyright {
+    text-align: center;
+}
+/*footer junk*/
+.footer_container {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.footer_nav {
+    justify-content: center;
+}
+.footer_social {
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin: auto;
+}
+
+a:visited {
+    color: #ffffff;  
+}
+a:hover {
+    color: #1b4ff8;
+}
+
+footer {
+    background-color: #f83f42;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

@@ -205,3 +205,29 @@
     font-size: 30px;
     margin: auto;
 }
+
+/*raised section*/
+.raised_container .amount_raised{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+/*mobile support*/
+@media only screen and (max-width: 950px) {
+    .banner_logo {
+        width: 100%;
+    }
+    .banner-container {
+        height: 45%;
+    }
+    .mfs {
+        width: 50%;
+    }
+    .benefitting_div {
+        width: 90%;
+    }
+    .banner_text {
+        font-size: 4.2vw;
+    }
+}

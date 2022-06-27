@@ -214,7 +214,7 @@
 }
 
 /*mobile support*/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 980px) {
     .banner_logo {
         width: 100%;
     }
@@ -230,4 +230,5 @@
     .banner_text {
         font-size: 4.2vw;
     }
+    
 }

@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+}
+
+.faq_container {
+    max-width: 700px;
+    margin: auto;
+}
+.faq_title {
+    text-align: center;
+}
+
+.faq_container h2{
+    color: #d34a18;
+}

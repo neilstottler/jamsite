@@ -129,6 +129,7 @@
     margin: 8px;
     padding: 4px;
     padding-bottom: 22px;
+    transition: all .2s ease;
 
 }
 .guest:hover {
@@ -182,7 +183,7 @@
     margin: 8px;
     padding: 4px;
     padding-bottom: 22px;
-
+    transition: all .2s ease;
 }
 .team:hover {
     box-shadow: 6px 8px 0 #d34a18;

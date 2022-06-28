@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+}
+@font-face {
+    font-family: "tf2build";
+    src: url("../font/tf2build.ttf");
+}
+.background_card {
+    margin: auto;
+    max-width: 1200px;
+    background-color: #272626;
+    padding: 5px 30px 30px 30px;
+}
+.schedule_container {
+    max-width: 1200px;
+    margin: auto;
+}
+.schedule_day1 img{
+    width: 100%;
+}
+.schedule_day2 img{
+    width: 100%;
+}
+.schedule_day3 img{
+    width: 100%;
+}
+.schedule_title {
+    text-align: center;
+    font-family: tf2build;
+    font-size: 30px;
+    background-color: #c25027;
+}
+.schedule_twitch_embed {
+    margin: auto;
+    text-align: center;
+}
+.twitch_title {
+    text-align: center;
+    font-family: tf2build;
+    font-size: 30px;
+    background-color: #c25027;
+}

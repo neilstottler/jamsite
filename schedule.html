@@ -14,7 +14,7 @@
         <ul>
 
             <li class="nav_tabs"><a href="index.html">Home</a></li>
-            <li class="nav_tabs"><a href="donations.html">Donations</a></li>
+            <li class="nav_tabs"><a href="">Donate</a></li>
             <!--Logo-->
         </ul>
         <a href="https://www.tf2maps.net"><img class="nav_logo" src="img/tf2m_extra_short_logo.png"></a>
@@ -33,15 +33,51 @@
 </header>
 
 <body>
-    <div style="height: 1000px;">
-        <p>This is temp. Suna GIVE ME THE CONTENT.</p>
+    <div class="background_card">
+        <div class="schedule_title">
+            <h1>Schedule</h1>
+        </div>
+    
+        <div class="schedule_container flex">
+            <div class="schedule_day1">
+                <img src="img/Day1.png">
+            </div>
+            <div class="schedule_day2">
+                <img src="img/Day2.png">
+            </div>
+            <div class="schedule_day3">
+                <img src="img/Day3.png">
+            </div>
+        </div>
+    
+        <div class="schedule_twitch_embed">
+            <div class="twitch_title">
+                <h1>Twitch Stream</h1>
+            </div>
+
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+    
+            <!-- Load the Twitch embed script -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+            <script type="text/javascript">
+                new Twitch.Embed("twitch-embed", {
+                    width: 1080,
+                    height: 720,
+                    channel: "tf2maps",
+                    muted: true,
+                    parent: ["jam.tf2maps.net"]
+                });
+            </script>
+        </div>
     </div>
 </body>
 <footer>
     <div class="">
 
-        <a style="position: fixed;bottom: 10px;right: 10px;z-index: 10;"
-            href=""><iframe
+        <a style="position: fixed;bottom: 10px;right: 10px;z-index: 10;" href=""><iframe
                 src="https://magic.geit.uk/countdown/new_cd/?targetTime=1640023200&amp;TVImage=https://wiki.teamfortress.com/w/images/a/ad/RED_TF2Maps_72hr_TF2Jam_Summer_Participant_Pin.png"
                 style="width: 316px;border: none; pointer-events:none"></iframe></a>
 

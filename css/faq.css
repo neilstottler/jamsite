@@ -5,9 +5,12 @@
 .faq_container {
     max-width: 700px;
     margin: auto;
+    background-color: #272626;
+    padding: 5px 30px 30px 30px;
 }
 .faq_title {
     text-align: center;
+    background-color: #c25027;
 }
 
 .faq_container h2{

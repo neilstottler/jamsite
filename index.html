@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.9.55/css/materialdesignicons.min.css">
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
     <title>Jam 2022 - TF2Maps.net</title>
+    <script type="text/javascript" src="js/total_amount.js"></script>
+
 </head>
 <header>
     <nav class="nav">
         <ul>
 
             <li class="nav_tabs"><a href="index.html">Home</a></li>
-            <li class="nav_tabs"><a href="donations.html">Donations</a></li>
+            <li class="nav_tabs"><a href="">Donate</a></li>
             <!--Logo-->
         </ul>
         <a href="https://www.tf2maps.net"><img class="nav_logo" src="img/tf2m_extra_short_logo.png"></a>
@@ -45,6 +47,32 @@
     <br>
     <div class="raised_container">
         <h1 class="amount_raised">Raised: $0.00</h1>
+        <script>
+            var g_Url = "https://jam.tf2maps.net/script/livecount.php";
+            var g_Element = document.querySelector(".amount_raised");
+
+            function GetAmount() {
+                console.log("Getting amount.")
+                return new Promise(async (rs, rj) => {
+
+                    var data = await fetch(g_Url).then(r => r.json());
+                    var amount = data.amount;
+                    rs(amount);
+
+                });
+            }
+
+            async function UpdateCounter() {
+                if (!g_Element)
+                    return;
+
+                var count = await GetAmount();
+                g_Element.innerText = `Raised: $${count}`;
+            }
+            document.addEventListener("DOMContentLoaded", function () {
+                UpdateCounter();
+            });
+        </script>
     </div>
     <br>
     <!--ABOUT SECTION-->
@@ -57,7 +85,8 @@
                     <h2>WHAT IS THE TF2MAPS JAM?</h2>
                     <p>For anyone new to the concept of the 72hr Jam, the 72hr Jam is a yearly
                         TF2Maps tradition where the community dedicates 3 days of their time to
-                        producing cool content themed around <a href="https://www.teamfortress.com/">Team Fortress 2</a>! This includes
+                        producing cool content themed around <a href="https://www.teamfortress.com/">Team Fortress
+                            2</a>! This includes
                         maps, models, warpaints, animations, videos, paintings, drawings, mods,
                         fan-fiction, woodwork, stonework, legwork, homework, and everything
                         else in-between so long as it's related to Team Fortress 2!
@@ -334,8 +363,7 @@
 <footer>
     <div class="">
 
-        <a style="position: fixed;bottom: 10px;right: 10px;z-index: 10;"
-            href=""><iframe
+        <a style="position: fixed;bottom: 10px;right: 10px;z-index: 10;" href=""><iframe
                 src="https://magic.geit.uk/countdown/new_cd/?targetTime=1640023200&amp;TVImage=https://wiki.teamfortress.com/w/images/a/ad/RED_TF2Maps_72hr_TF2Jam_Summer_Participant_Pin.png"
                 style="width: 316px;border: none; pointer-events:none"></iframe></a>
 

@@ -49,7 +49,9 @@
 
 /*about section*/
 /*what is*/
+
 .what_is_section {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     font-size: 17px;
@@ -80,6 +82,7 @@
 }
 /*medals*/
 .medals_section {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     font-size: 17px;
@@ -114,7 +117,7 @@
 
 /*guests section*/
 .guests_container {
-    background-color: #D56062;
+    background-color: #4e443b;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -125,7 +128,7 @@
     display: inline-block;
     width: 110px;
     height: 110px;
-    background-color: #F37748;
+    background-color: #c25027;
     margin: 8px;
     padding: 4px;
     padding-bottom: 22px;
@@ -134,7 +137,7 @@
 }
 .guest:hover {
     box-shadow: 6px 8px 0 #d34a18;
-    background-color: #f76c39;
+    background-color: #e45e2e;
     color: #f2eeeb;
 }
 .guest_img {
@@ -142,7 +145,6 @@
     height: 110px;
 }
 .guest_title {
-    background-color: #F37748;
     margin: 0;
     padding-left: 4px;
     padding-right: 4px;
@@ -156,7 +158,7 @@
 
 /*Meet the team section*/
 .team_container {
-    background-color: #e24f52;
+    background-color: #1e1c1c;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -179,7 +181,7 @@
     display: inline-block;
     width: 192px;
     height: 310px;
-    background-color: #F37748;
+    background-color: #c25027;
     margin: 8px;
     padding: 4px;
     padding-bottom: 22px;
@@ -187,7 +189,7 @@
 }
 .team:hover {
     box-shadow: 6px 8px 0 #d34a18;
-    background-color: #f76c39;
+    background-color: #e45e2e;
     color: #f2eeeb;
 }
 .team_img {
@@ -230,6 +232,32 @@
     }
     .banner_text {
         font-size: 4.2vw;
+    }
+    .what_is_section {
+        display: inline;
+    }
+    .medals_section {
+        display: inline;
+    }
+    .about_image img {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .what_is {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .medal_info {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .medal_showcase {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
     }
     
 }

@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.9.55/css/materialdesignicons.min.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
-    <title>Jam 2022 - TF2Maps.net</title>
-    <script type="text/javascript" src="js/total_amount.js"></script>
-
-</head>
-<header>
-    <nav class="nav">
-        <ul>
-
-            <li class="nav_tabs"><a href="index.html">Home</a></li>
-            <li class="nav_tabs"><a href="">Donate</a></li>
-            <!--Logo-->
-        </ul>
-        <a href="https://www.tf2maps.net"><img class="nav_logo" src="img/tf2m_extra_short_logo.png"></a>
-        <ul>
-            <li class="nav_tabs"><a href="faq.html">FAQ</a></li>
-            <li class="nav_tabs"><a href="schedule.html">Schedule</a></li>
-
-
-            <!--
-            <div>
-                <li class="nav_tabs nav_tabs_right">Raised: $10,000</li>
-            </div>
-        -->
-        </ul>
-    </nav>
-</header>
-
 <body>
     <!--BANNER SECTION-->
     <div class="banner-container">
@@ -46,13 +10,11 @@
     </div>
     <br>
     <div class="raised_container">
-        <h1 class="amount_raised">Raised: $0.00</h1>
         <script>
-            var g_Url = "https://jam.tf2maps.net/script/livecount.php";
+            var g_Url = "https://bot.tf2maps.net/livecount.php";
             var g_Element = document.querySelector(".amount_raised");
 
             function GetAmount() {
-                console.log("Getting amount.")
                 return new Promise(async (rs, rj) => {
 
                     var data = await fetch(g_Url).then(r => r.json());
@@ -73,6 +35,7 @@
                 UpdateCounter();
             });
         </script>
+        <h1 class="amount_raised">Raised: $0.00</h1>
     </div>
     <br>
     <!--ABOUT SECTION-->
@@ -80,7 +43,7 @@
         <!--container-->
         <div class="">
             <!--Top section-->
-            <div class="container what_is_section">
+            <div class="container what_is_section flex">
                 <div class="what_is">
                     <h2>WHAT IS THE TF2MAPS JAM?</h2>
                     <p>For anyone new to the concept of the 72hr Jam, the 72hr Jam is a yearly
@@ -114,7 +77,7 @@
                 </div>
             </div>
             <!--bottom section-->
-            <div class="container medals_section">
+            <div class="container medals_section flex">
 
                 <div class="medal_showcase">
                     <img class="medal" src="img/jammedal_promo2.png">
@@ -237,7 +200,7 @@
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                         <script>
                             var audio = $("#yeayah")[0];
-                            $("#nesman").click(function () {
+                            $("#nesman").mouseenter(function () {
                                 audio.play();
                             });
                         </script>
@@ -360,29 +323,3 @@
 
 
 </body>
-<footer>
-    <div class="">
-
-        <a style="position: fixed;bottom: 10px;right: 10px;z-index: 10;" href=""><iframe
-                src="https://magic.geit.uk/countdown/new_cd/?targetTime=1640023200&amp;TVImage=https://wiki.teamfortress.com/w/images/a/ad/RED_TF2Maps_72hr_TF2Jam_Summer_Participant_Pin.png"
-                style="width: 316px;border: none; pointer-events:none"></iframe></a>
-
-    </div>
-    <div class="footer_copyright">
-        <p>© <a href="https://tf2maps.net">TF2Maps.net</a> 2022 | All Rights Reserved </p><br>
-    </div>
-
-    <div class="footer_container flex">
-        <div class="footer_nav flex">
-        </div>
-        <div class="footer_social flex">
-            <a class="mdi mdi-discord" href="https://discord.com/invite/wSYJN3r"></a>
-            <a class="mdi mdi-steam" href="https://steamcommunity.com/groups/TF2Mappers"></a>
-            <a class="mdi mdi-twitch" href="https://www.twitch.tv/tf2maps"></a>
-            <a class="mdi mdi-twitter" href="https://twitter.com/tf2maps"></a>
-            <a class="mdi mdi-youtube" href="https://www.youtube.com/user/tf2mapsnet"></a>
-        </div>
-    </div>
-</footer>
-
-</html>

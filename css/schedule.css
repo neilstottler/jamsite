@@ -26,9 +26,10 @@
 }
 .schedule_title {
     text-align: center;
-    font-family: tf2build;
-    font-size: 30px;
     background-color: #c25027;
+}
+.schedule_title img{
+    width: 50%;
 }
 .schedule_twitch_embed {
     margin: auto;
@@ -36,7 +37,8 @@
 }
 .twitch_title {
     text-align: center;
-    font-family: tf2build;
-    font-size: 30px;
     background-color: #c25027;
+}
+.twitch_title img {
+    width: 50%;
 }
